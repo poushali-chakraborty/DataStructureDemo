@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.datastructuredemo.TraverseFragment"
+    android:background="@drawable/traverse_layout">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"></RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Spinner
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner" />
+
+            <Button
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:text="show"
+                android:id="@+id/show"
+                android:layout_gravity="left"
+                android:background="@drawable/my_button_selecter"
+                android:layout_weight="0.36" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

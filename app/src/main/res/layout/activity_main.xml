@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container" >
+    <RelativeLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mystyle_for_layout"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+           android:src="@drawable/img1"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/iView"
+            android:layout_marginTop="77dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="say"
+            android:id="@+id/button"
+            android:background="@drawable/my_button_selecter"
+            android:shadowColor="#ABABAB"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:onClick="changeText"
+            android:layout_below="@+id/iView"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout></FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/drawerPane"
+        android:layout_gravity="start">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/profilebox"
+            android:background="@color/accent_material_light"
+            android:padding="8dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/avatar"
+                android:src="@drawable/a"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userName"
+                android:text="hello user"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            </RelativeLayout>
+
+        <ListView
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:id="@+id/navList"
+            android:layout_below="@id/profilebox"
+            android:choiceMode="singleChoice"
+            android:background="@drawable/mystyle_list"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
